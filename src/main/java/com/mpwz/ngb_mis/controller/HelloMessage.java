@@ -10,17 +10,35 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/greeting")
 public class HelloMessage {
 
-    @RequestMapping(method = RequestMethod.GET,value ="hello")
-    public ResponseEntity<String>helloWorld(){
+    @RequestMapping(method = RequestMethod.GET, value = "hello")
+    public ResponseEntity<String> helloWorld() {
 
-        return new ResponseEntity<>("Hello world", HttpStatus.OK);
+        return new ResponseEntity<>("Hello   world by jitendra", HttpStatus.OK);
 
     }
 
-    @RequestMapping(method = RequestMethod.GET,value = "user")
-    public ResponseEntity<String>helloUser(){
+    @RequestMapping(method = RequestMethod.GET, value = "arpit")
+    public ResponseEntity<String> helloArpit() {
 
-        return new ResponseEntity<>("Hello User", HttpStatus.OK);
+        return new ResponseEntity<>("Hello Arpit", HttpStatus.OK);
+
+    }
+
+
+    @RequestMapping(method = RequestMethod.GET, value = "world")
+    public ResponseEntity<String> helloToAll() {
+
+        return new ResponseEntity<>("Hello to all", HttpStatus.OK);
+
+
+    }
+
+
+    @RequestMapping(method = RequestMethod.GET, value = "xyz")
+    public ResponseEntity<String> helloNaren() {
+
+        return new ResponseEntity<>("Hello User New Naren", HttpStatus.OK);
+
 
     }
     @RequestMapping(method = RequestMethod.GET,value = "user2")
@@ -31,3 +49,4 @@ public class HelloMessage {
     }
 
 }
+
