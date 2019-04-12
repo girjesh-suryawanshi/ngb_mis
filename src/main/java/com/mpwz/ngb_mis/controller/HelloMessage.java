@@ -40,4 +40,11 @@ public class HelloMessage {
         return new ResponseEntity<>("add", HttpStatus.OK);
 
     }
+
+    @RequestMapping(method = RequestMethod.POST,value = "sub1")
+    public ResponseEntity<String>sub1(){
+
+        return new ResponseEntity<>("add", HttpStatus.OK);
+
+    }
 }
