@@ -34,10 +34,16 @@ public class HelloMessage {
         return new ResponseEntity<>("add", HttpStatus.OK);
 
     }
-    @RequestMapping(method = RequestMethod.POST,value = "arpit")
-    public ResponseEntity<String>sub(){
 
-        return new ResponseEntity<>("add", HttpStatus.OK);
+
+
+
+    @RequestMapping(method = RequestMethod.GET,value = "xyz")
+    public ResponseEntity<String>helloNaren(){
+
+        return new ResponseEntity<>("Hello User New Naren", HttpStatus.OK);
 
     }
+
+
 }
