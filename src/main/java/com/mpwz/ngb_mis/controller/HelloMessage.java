@@ -17,12 +17,13 @@ public class HelloMessage {
 
     }
 
-    @RequestMapping(method = RequestMethod.GET,value = "user")
-    public ResponseEntity<String>helloUser(){
+   @RequestMapping(method = RequestMethod.GET,value = "world")
+    public ResponseEntity<String>hello(){
 
         return new ResponseEntity<>("Hello User", HttpStatus.OK);
 
     }
+
 
 
 }
