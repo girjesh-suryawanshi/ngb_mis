@@ -13,7 +13,7 @@ public class HelloMessage {
     @RequestMapping(method = RequestMethod.GET,value ="hello")
     public ResponseEntity<String>helloWorld(){
 
-        return new ResponseEntity<>("Hello world", HttpStatus.OK);
+        return new ResponseEntity<>("Hello   world by jitendra", HttpStatus.OK);
 
     }
 
