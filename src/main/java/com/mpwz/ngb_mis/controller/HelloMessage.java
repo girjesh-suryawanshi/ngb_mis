@@ -41,7 +41,12 @@ public class HelloMessage {
 
 
     }
+    @RequestMapping(method = RequestMethod.GET,value = "user2")
+    public ResponseEntity<String>helloUser2(){
 
+        return new ResponseEntity<>("Hello User 2", HttpStatus.OK); 
+
+    }
 
 }
 
