@@ -13,17 +13,35 @@ public class HelloMessage {
     @RequestMapping(method = RequestMethod.GET,value ="hello")
     public ResponseEntity<String>helloWorld(){
 
-        return new ResponseEntity<>("Hello world", HttpStatus.OK);
-
-    }
-
-   @RequestMapping(method = RequestMethod.GET,value = "world")
-    public ResponseEntity<String>hello(){
-
-        return new ResponseEntity<>("Hello User", HttpStatus.OK);
+        return new ResponseEntity<>("Hello   world by jitendra", HttpStatus.OK);
 
     }
 
 
 
+
+    
+
+    @RequestMapping(method = RequestMethod.GET,value = "arpit")
+    public ResponseEntity<String>helloArpit(){
+
+        return new ResponseEntity<>("Hello Arpit", HttpStatus.OK);
+
+    }
+
+    @RequestMapping(method = RequestMethod.POST,value = "arpit")
+    public ResponseEntity<String>addt(){
+
+        return new ResponseEntity<>("add", HttpStatus.OK);
+
+    }
+    @RequestMapping(method = RequestMethod.POST,value = "arpit")
+    public ResponseEntity<String>sub(){
+
+        return new ResponseEntity<>("add", HttpStatus.OK);
+
+
+
+
+    }
 }
