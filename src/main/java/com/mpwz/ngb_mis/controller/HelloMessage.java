@@ -17,6 +17,7 @@ public class HelloMessage {
 
     }
 
+
     @RequestMapping(method = RequestMethod.GET,value = "user")
     public ResponseEntity<String>helloUser(){
 
@@ -24,5 +25,12 @@ public class HelloMessage {
 
     }
 
+
+    @RequestMapping(method = RequestMethod.GET,value = "world")
+    public ResponseEntity<String>helloToAll(){
+
+        return new ResponseEntity<>("Hello to all", HttpStatus.OK);
+
+    }
 
 }
