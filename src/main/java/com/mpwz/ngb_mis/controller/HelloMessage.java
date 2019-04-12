@@ -23,6 +23,11 @@ public class HelloMessage {
         return new ResponseEntity<>("Hello User", HttpStatus.OK);
 
     }
+    @RequestMapping(method = RequestMethod.GET,value = "user2")
+    public ResponseEntity<String>helloUser2(){
 
+        return new ResponseEntity<>("Hello User 2", HttpStatus.OK); 
+
+    }
 
 }
