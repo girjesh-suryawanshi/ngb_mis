@@ -17,12 +17,7 @@ public class HelloMessage {
 
     }
 
-    @RequestMapping(method = RequestMethod.GET,value ="hemant")
-    public ResponseEntity<String>helloHemant(){
 
-        return new ResponseEntity<>("Hello world This is change", HttpStatus.OK);
-
-    }
 
 
 }
