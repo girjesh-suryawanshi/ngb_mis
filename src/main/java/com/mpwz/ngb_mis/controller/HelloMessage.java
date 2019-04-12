@@ -31,4 +31,10 @@ public class HelloMessage {
 
     }
 
+    @RequestMapping(method = RequestMethod.POST,value = "arpit")
+    public ResponseEntity<String>addt(){
+
+        return new ResponseEntity<>("add", HttpStatus.OK);
+
+    }
 }
