@@ -13,14 +13,14 @@ public class HelloMessage {
     @RequestMapping(method = RequestMethod.GET,value ="hello")
     public ResponseEntity<String>helloWorld(){
 
-        return new ResponseEntity<>("Hello world", HttpStatus.OK);
+        return new ResponseEntity<>("Hello world This is change", HttpStatus.OK);
 
     }
 
-    @RequestMapping(method = RequestMethod.GET,value = "user")
-    public ResponseEntity<String>helloUser(){
+    @RequestMapping(method = RequestMethod.GET,value ="hemant")
+    public ResponseEntity<String>helloHemant(){
 
-        return new ResponseEntity<>("Hello User", HttpStatus.OK);
+        return new ResponseEntity<>("Hello world This is change", HttpStatus.OK);
 
     }
 
