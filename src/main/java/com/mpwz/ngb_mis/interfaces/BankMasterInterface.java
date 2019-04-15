@@ -17,5 +17,6 @@ public interface BankMasterInterface extends BeanInterface {
 
     public void setAddress(String address);
 
+
 }
 

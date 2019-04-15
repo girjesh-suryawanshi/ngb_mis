@@ -22,6 +22,16 @@ public class BankMaster implements BankMasterInterface {
     @Column(name = "address")
     private String address;
 
+    public BankMaster() {
+    }
+
+    public BankMaster(long id, String bankName, String ifscCode, String address) {
+        this.id = id;
+        this.bankName = bankName;
+        this.ifscCode = ifscCode;
+        this.address = address;
+    }
+
     public long getId() {
         return id;
     }
