@@ -1,5 +1,6 @@
 package com.mpwz.ngb_mis.controller;
 
+import com.mpwz.ngb_mis.beans.BankMaster;
 import com.mpwz.ngb_mis.interfaces.BankMasterInterface;
 import com.mpwz.ngb_mis.services.BankMasterService;
 import com.mpwz.ngb_mis.utility.GlobalResources;
@@ -46,7 +47,7 @@ public class BankMasterController {
     }
 
     @RequestMapping(method =RequestMethod.POST,consumes = "application/json")
-    public ResponseEntity<?>postBankMaster(@RequestBody BankMasterInterface bankMasterInterface){
+    public ResponseEntity<?>postBankMaster(@RequestBody BankMaster bankMasterInterface){
         String methodName = "postBankMaster() ";
         logger.info(methodName + "called");
         ResponseEntity<?>response = null;
